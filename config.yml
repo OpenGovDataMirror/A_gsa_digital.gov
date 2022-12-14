@@ -1,0 +1,32 @@
+title                   : "digital.gov"
+baseURL                 : "/"
+languageCode            : "en-us"
+theme                   : "digital.gov"
+themesDir               : "./themes"
+enableEmoji             : true
+
+MetaDataFormat          : "yaml"
+DefaultContentLanguage  : "en"
+SectionPagesMenu        : "main"
+Paginate                : 100
+googleAnalytics         : ""
+enableRobotsTXT         : false
+
+ignoreFiles:
+  - "^_template"
+  - "content/_tmp/*"
+# uncomment the following for a dev mode that excludes posts before 2017
+#  - "content/posts/201[0-6]"
+
+sitemap:
+  changefreq            : "monthly"
+  priority              : 0.5
+  filename              : "sitemap.xml"
+
+params:
+  description           : "digital.gov"
+  cdnurl                : "https://s3.amazonaws.com/sitesusa/wp-content/uploads/sites/"
+  defaulturl            : "https://digital.gov"
+
+permalinks:
+  posts                 : ":year/:month/:day/:slug/"
